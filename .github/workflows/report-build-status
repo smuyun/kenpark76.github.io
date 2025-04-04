@@ -1,0 +1,23 @@
+设置工作
+当前跑步者版本：'2.323.0'
+操作系统
+跑步者图像
+Runner Image Provisioner
+github_token权限
+秘密来源：动作
+准备工作流目录
+准备所有必需的动作
+完整的作业名称：报告建设的状态
+报告构建状态
+报告构建状态
+运行gh api -x帖子“ repos/$ github_repository/pages/telemetry” \
+  gh api -x帖子“ repos/$ github_repository/pages/telemetry” \
+    -f github_run_id =“ $ github_run_id”
+    -f =“ $结论”
+  外壳：/usr/bin/bash -e {0}
+  env：
+    github_token：***
+    结论：成功
+{}
+完成工作
+清理孤儿流程
