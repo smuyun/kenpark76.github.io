@@ -1,0 +1,48 @@
+设置工作
+当前跑步者版本： '2.323.0'
+操作系统
+  Ubuntu
+  24.04.2
+  LTS
+跑步者图像
+  图片：ubuntu-24.04
+  版本：20250323.1.0
+  包括软件：https：//github.com/actions/runner-images/blob/ubuntu24/20250323.1/images/ubuntu/ubuntu2404-readme.md
+  图像发布：https：//github.com/actions/runner-images/releases/tag/ubuntu24%2F20250323.1
+Runner Image Provisioner
+  2.0.422.1
+github_token权限
+  内容：阅读
+  元数据：阅读
+  页面：写
+秘密来源：行动
+准备工作流目录
+准备所有必需的动作
+获取动作下载信息
+下载不变的动作软件包“动作/部署页面@v4”
+完整的作业名称：部署
+
+部署到github页面
+运行操作/部署页面@v4
+  和：
+    令牌：***
+    超时：600000
+    error_count：10
+    reporting_interval：5000
+    artifact_name：github页面
+    预览：false
+在此工作流程中获取“ github页面”的文物元数据
+发现1个工件
+使用有效载荷创建页面部署：
+{
+	“ artifact_id”：2879773083，
+	“ Pages_build_version”：“ 44E8E22656EA28278827A0E4666666666666666666666666666666666666666655565927D”，
+	“ oidc_token”：“ ***”
+}
+创建的部署44E8E22656EA28278827A0E466666BEC3155​​65927D，ID：44E8E22656EA2827888827A0E46666666666666666BEC3155​​ 565927D 565927D
+获得页面部署状态...
+报告了成功！
+完成工作
+评估和设置环境url
+评估的环境URL ： https ： //kenpark76.github.io/
+清理孤儿流程
