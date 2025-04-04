@@ -1,3 +1,0 @@
-https://kenpark76.github.io/
-        publish-profile:         Publish-Profile：$ {{{secrets.azure_webapp_publish_profile}}{{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-        软件包：          软件包：$ { {软件包：$ env.azure_webapp_package_path} }{  { env.azure_webapp_package_path } }
