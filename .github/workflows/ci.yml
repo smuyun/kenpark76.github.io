@@ -3,8 +3,9 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
+name: Build
 Set up job
 Current runner version: '2.323.0'
 Operating System
@@ -435,6 +436,7 @@ http.https://github.com/.extraheader
 /usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
 Complete job
 Cleaning up orphan processes
+name: report-build-status
 Set up job
 Current runner version: '2.323.0'
 Operating System
@@ -458,6 +460,7 @@ Run gh api -X POST "repos/$GITHUB_REPOSITORY/pages/telemetry" \
 {}
 Complete job
 Cleaning up orphan processes
+name: deploy
 Set up job
 Current runner version: '2.323.0'
 Operating System
