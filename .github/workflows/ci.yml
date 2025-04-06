@@ -5,28 +5,6 @@ on:
     branches:
       - master
 jobs:
-  build-and-deploy:
-    # 构建环境使用 ubuntu
-    runs-on: ubuntu-latest
-    steps:
-      # 官方action, 将代码拉取到虚拟机
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          persist-credentials: false
-
-      # 安装node.js
-      - name: Use Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: "20.10.0"
-
-      # 下载依赖、打包项目
-      - name: Install and Build
-        run: |
-          yarn install
-          yarn build
-
 Set up job
 Current runner version: '2.323.0'
 Operating System
